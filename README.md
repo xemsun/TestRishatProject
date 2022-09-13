@@ -5,7 +5,7 @@
 <b>Клонируем репо</b><br>
 git clone https://github.com/xemsun/TestRishatProject.git
 
-<b>Переходите в папку с кодом</b><br>
+Переходите в папку с кодом<br>
 <br>
 <b>docker-compose up</b><br>
 
