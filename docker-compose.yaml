@@ -4,6 +4,7 @@ services:
     image: postgres
     environment:
       POSTGRES_HOST_AUTH_METHOD: 'trust'
+    restart: on-failure
   web:
     build: .
     command: > 
