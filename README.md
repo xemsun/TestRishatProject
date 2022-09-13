@@ -2,11 +2,13 @@
 
 Приветствую
 
-<b>Качаете код</b>
+<b>Клонируем репо</b><br>
+git clone https://github.com/xemsun/TestRishatProject.git
 
 <b>Переходите в папку с кодом</b><br>
-<b>docker-compose build</b><br>
+<br>
 <b>docker-compose up</b><br>
+
 <b>Создается админ, username: test2 password: 1<br>
 И один тестовый Item id:1</b>
 
