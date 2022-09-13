@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
+  web:
+    build: .
+    command: > 
+      bash -c "python manage.py migrate && 
+      python manage.py createsuperuser11 --username test2 --password 1 --noinput --email 'blank@email.com' && 
+      python manage.py create_test_data &&
+      python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
